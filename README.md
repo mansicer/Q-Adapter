@@ -1,6 +1,6 @@
 # Q-Adapter
 
-The implementation of the paper "Q-Adapter: Training Your LLM Adapter as a Residual Q-Function".
+The implementation of the paper "Q-Adapter: Training Your LLM Adapter as a Residual Q-Function", [arXiv link](https://arxiv.org/abs/2407.03856).
 
 ## Installation
 
@@ -39,4 +39,17 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 TOKENIZERS_PARALLELISM=true accelerate launch --con
 --base_model=meta-llama/Meta-Llama-3-8B --dataset_name=hh-rlhf --data_dir=${data_class} \
 --logging_steps=20 --eval_steps=100 --num_epochs=3 --micro_batch_size=1 \
 --wandb_project=Q-Adapter --wandb_run_name=QAdapter-${data_class} --output_dir=logs/qadapter-${data_class}
+```
+## Citation
+
+```tex
+@misc{li2024qadaptertrainingllmadapter,
+      title={Q-Adapter: Training Your LLM Adapter as a Residual Q-Function}, 
+      author={Yi-Chen Li and Fuxiang Zhang and Wenjie Qiu and Lei Yuan and Chengxing Jia and Zongzhang Zhang and Yang Yu},
+      year={2024},
+      eprint={2407.03856},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2407.03856}, 
+}
 ```
