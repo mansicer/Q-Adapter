@@ -1,0 +1,6 @@
+{
+    "description": "Template used by Alpaca-LoRA Chinese.",
+    "prompt_input": "下面是一条任务描述，并配有提供更多信息的输入。请写一个能完成要求的适当回答。\n\n### 描述：\n{instruction}\n\n### 输入：\n{input}\n\n### 回答：\n",
+    "prompt_no_input": "下面是一条任务描述，并配有提供更多信息的输入。请写一个能完成要求的适当回答。\n\n### 描述：\n{instruction}\n\n### 回答：\n",
+    "response_split": "### 回答："    
+}
